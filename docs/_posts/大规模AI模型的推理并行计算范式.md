@@ -23,7 +23,7 @@ order: -2
 
 ### **摘要**
 
-随着模型参数规模迈入万亿级别，其在推理（Inference）阶段的部署面临着内存墙（Memory Bound）、计算墙（Compute Bound）与I/O墙（I/O Bound）等多重挑战。本文旨在系统性地梳理和剖析大规模模型推理所采用的高性能并行计算范式。文章首先对数据并行（Data Parallelism, DP）、流水线并行（Pipeline Parallelism, PP）和张量并行（Tensor Parallelism, TP）等基础概念进行界定，并探讨其在推理场景下的应用边界与理论局限。其次，深入探讨了以连续批处理（Continuous Batching）和分页注意力（PagedAttention）为代表的现代推理系统的核心架构演进。在此基础上，本文进一步剖析了模型量化（Quantization）与推测解码（Speculative Decoding）等前沿算法优化。为将理论与实践相结合，本文选取了三个典型案例进行深度研究：面向特定架构的组件级并行（以Stable Diffusion为例）、应对超长上下文挑战的序列并行，以及在复杂单一样本场景下的混合并行策略（以AlphaFold3为例）。最后，通过一个在HPC环境下部署CPU推理集群的工程案例，展示了在现实约束下进行系统架构设计的智慧。本文期望为从事大规模AI基础设施（AI Infra）的研究人员与工程师提供一个清晰、全面的知识图谱与决策参考。
+随着模型参数规模迈入万亿级别，其在推理（Inference）阶段的部署面临着内存墙（Memory Bound）、计算墙（Compute Bound）与I/O墙（I/O Bound）等多重挑战。本文系统性地梳理和剖析大规模模型推理所采用的高性能并行计算范式。文章首先对数据并行（Data Parallelism, DP）、流水线并行（Pipeline Parallelism, PP）和张量并行（Tensor Parallelism, TP）等基础概念进行界定，并探讨其在推理场景下的应用边界与理论局限。其次，深入探讨了以连续批处理（Continuous Batching）和分页注意力（PagedAttention）为代表的现代推理系统的核心架构演进。在此基础上，本文进一步剖析了模型量化（Quantization）与推测解码（Speculative Decoding）等前沿算法优化。为将理论与实践相结合，本文选取了三个典型案例进行深度研究：面向特定架构的组件级并行（以Stable Diffusion为例）、应对超长上下文挑战的序列并行，以及在复杂单一样本场景下的混合并行策略（以AlphaFold3为例）。最后，通过一个在HPC环境下部署CPU推理集群的工程案例，展示了如何在现实约束下进行系统架构设计。
 
 ---
 
