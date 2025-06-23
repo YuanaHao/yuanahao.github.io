@@ -70,7 +70,7 @@ order: -2
 *   **数学原理**：基于矩阵乘法的结合律，对权重矩阵进行行或列切分。
     *   **列并行 (Column Parallelism)**：将权重矩阵A按列切分 $A = [A_1, A_2]$。输入X广播给所有设备，各设备独立计算 $XA_1$ 和 $XA_2$。最后，通过 **All-Gather** 通信将结果拼接为完整的输出 $Y = [Y_1, Y_2]$。
     *   **行并行 (Row Parallelism)**：将权重矩阵A按行切分
-        $ A = \begin{pmatrix} A_1 \\ A_2 \end{pmatrix} $
+        $$ A = \begin{pmatrix} A_1 \\ A_2 \end{pmatrix} $$
         输入X也相应地按列切分 $X = [X_1, X_2]$。各设备独立计算 $X_1A_1$ 和 $X_2A_2$。最后，通过 **All-Reduce** 通信对部分结果求和，得到最终输出 $Y = Y_1 + Y_2$。
 
 *   **在Transformer中的应用 (Megatron-LM)**：TP巧妙地应用于Transformer的MLP层和多头注意力（MHA）层，以最小化通信开销。
