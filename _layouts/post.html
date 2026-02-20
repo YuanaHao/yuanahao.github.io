@@ -1,0 +1,49 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    <div id="main" role="main">
+      {% include sidebar.html %}
+
+      <article class="page" itemscope itemtype="http://schema.org/BlogPosting">
+        <meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">
+        <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+        <div class="page__inner-wrap">
+          <header>
+            <h1 class="page__title" itemprop="headline">{{ page.title }}</h1>
+            <p class="page__meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+              {% if page.author %}
+                · {{ page.author }}
+              {% endif %}
+              {% if page.tags and page.tags.size > 0 %}
+                · {{ page.tags | join: ", " }}
+              {% endif %}
+            </p>
+            {% if page.excerpt %}
+              <p class="page__lead">{{ page.excerpt | strip_html }}</p>
+            {% endif %}
+          </header>
+          <section class="page__content" itemprop="text">
+            {{ content }}
+          </section>
+        </div>
+      </article>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

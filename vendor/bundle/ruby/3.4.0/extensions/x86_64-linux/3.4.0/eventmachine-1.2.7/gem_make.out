@@ -1,0 +1,76 @@
+current directory: /run/media/youth/Data/biancheng/homepage/yuanahao.github.io/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /run/media/youth/Data/biancheng/homepage/yuanahao.github.io/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20260220-131596-mg161w sitelibdir\=./.gem.20260220-131596-mg161w clean
+
+current directory: /run/media/youth/Data/biancheng/homepage/yuanahao.github.io/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20260220-131596-mg161w sitelibdir\=./.gem.20260220-131596-mg161w
+compiling mapper.cpp
+compiling rubymain.cpp
+包含于文件 /usr/include/ruby-3.4.0/ruby/internal/core.h:27,
+        于 /usr/include/ruby-3.4.0/ruby/ruby.h:29,
+        于 /usr/include/ruby-3.4.0/ruby.h:38,
+        于 rubymain.cpp:25:
+rubymain.cpp: In function ‘VALUE mapper_new(VALUE, VALUE)’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:199:24: 警告：‘VALUE rb_data_object_wrap_warning(VALUE, void*, RUBY_DATA_FUNC, RUBY_DATA_FUNC)’ 已被弃用: by TypedData [-Wdeprecated-declarations]
+  199 |     rb_data_object_wrap(                          \
+      |                        ^
+rubymain.cpp:53:19: 附注：在宏 ‘Data_Wrap_Struct’ 展开时
+   53 |         VALUE v = Data_Wrap_Struct (Mapper, 0, mapper_dt, (void*)m);
+      |                   ^~~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:293:1: 附注：在此声明
+  293 | rb_data_object_wrap_warning(VALUE klass, void *ptr, RUBY_DATA_FUNC mark, RUBY_DATA_FUNC free)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+包含于文件 /usr/include/ruby-3.4.0/ruby/internal/assume.h:29,
+        于 /usr/include/ruby-3.4.0/ruby/backward/2/assume.h:24,
+        于 /usr/include/ruby-3.4.0/ruby/defines.h:72,
+        于 /usr/include/ruby-3.4.0/ruby/ruby.h:25:
+rubymain.cpp: In function ‘VALUE mapper_get_chunk(VALUE, VALUE, VALUE)’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: 警告：‘void* rb_data_object_get_warning(VALUE)’ 已被弃用: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: 附注：in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rubymain.cpp:65:9: 附注：在宏 ‘Data_Get_Struct’ 展开时
+   65 |         Data_Get_Struct (self, Mapper_t, m);
+      |         ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: 附注：在此声明
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rubymain.cpp: In function ‘VALUE mapper_close(VALUE)’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: 警告：‘void* rb_data_object_get_warning(VALUE)’ 已被弃用: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: 附注：in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rubymain.cpp:88:9: 附注：在宏 ‘Data_Get_Struct’ 展开时
+   88 |         Data_Get_Struct (self, Mapper_t, m);
+      |         ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: 附注：在此声明
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rubymain.cpp: In function ‘VALUE mapper_size(VALUE)’:
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:275:52: 警告：‘void* rb_data_object_get_warning(VALUE)’ 已被弃用: by TypedData [-Wdeprecated-declarations]
+  275 |     ((sval) = RBIMPL_CAST((type*)rb_data_object_get(obj)))
+      |                                                    ^
+/usr/include/ruby-3.4.0/ruby/internal/cast.h:36:29: 附注：in definition of macro ‘RBIMPL_CAST’
+   36 | # define RBIMPL_CAST(expr) (expr)
+      |                             ^~~~
+rubymain.cpp:102:9: 附注：在宏 ‘Data_Get_Struct’ 展开时
+  102 |         Data_Get_Struct (self, Mapper_t, m);
+      |         ^~~~~~~~~~~~~~~
+/usr/include/ruby-3.4.0/ruby/internal/core/rdata.h:325:1: 附注：在此声明
+  325 | rb_data_object_get_warning(VALUE obj)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~
+linking shared-object fastfilereaderext.so
+
+current directory: /run/media/youth/Data/biancheng/homepage/yuanahao.github.io/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20260220-131596-mg161w sitelibdir\=./.gem.20260220-131596-mg161w install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20260220-131596-mg161w
+
+current directory: /run/media/youth/Data/biancheng/homepage/yuanahao.github.io/vendor/bundle/ruby/3.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20260220-131596-mg161w sitelibdir\=./.gem.20260220-131596-mg161w clean

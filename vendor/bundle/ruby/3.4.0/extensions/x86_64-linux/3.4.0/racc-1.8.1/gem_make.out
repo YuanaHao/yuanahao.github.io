@@ -1,0 +1,18 @@
+current directory: /run/media/youth/Data/biancheng/homepage/yuanahao.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /run/media/youth/Data/biancheng/homepage/yuanahao.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260220-131596-1co75q sitelibdir\=./.gem.20260220-131596-1co75q clean
+
+current directory: /run/media/youth/Data/biancheng/homepage/yuanahao.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260220-131596-1co75q sitelibdir\=./.gem.20260220-131596-1co75q
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /run/media/youth/Data/biancheng/homepage/yuanahao.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260220-131596-1co75q sitelibdir\=./.gem.20260220-131596-1co75q install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20260220-131596-1co75q/racc
+
+current directory: /run/media/youth/Data/biancheng/homepage/yuanahao.github.io/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260220-131596-1co75q sitelibdir\=./.gem.20260220-131596-1co75q clean

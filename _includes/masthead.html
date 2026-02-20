@@ -6,7 +6,11 @@
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">Homepage</a></li>
           {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign item_class = "masthead__menu-item" %}
+            {% if forloop.last %}
+              {% assign item_class = item_class | append: " masthead__menu-item--divider" %}
+            {% endif %}
+            <li class="{{ item_class }}"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>

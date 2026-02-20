@@ -59,6 +59,13 @@
     padding-right: 2em;
     font-weight: 700;
   }
-}
 
+  &--divider {
+    @include breakpoint($medium) {
+      margin-left: .4em;
+      padding-left: .9em;
+      border-left: 1px solid $border-color;
+    }
+  }
+}
 
